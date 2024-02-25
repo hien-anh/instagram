@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="inta-general.css">
+    <link rel="stylesheet" href="insta-middle.css">
+    <link rel="stylesheet" href="insta-right.css">
+    <script src="https://kit.fontawesome.com/3db3a75b5a.js" crossorigin="anonymous"></script>
+    <style>
+      .sidebar-left {
+        display: flex;
+        flex-direction: column;
+        width: 230px;
+        border-right: 1px solid lightgray;
+        margin-right: 35px;
+        padding: 0px 15px 0px 15px;
+        position: fixed;
+        height: 100vh;
+      }
+
+      .insta-logo-div {
+        margin: 30px;
+        align-items: center;
+
+      }
+
+      .insta-logo {
+        width: 110px;
+        margin-left: -17px;
+      }
+
+      .navigation-buttons {
+        display: grid;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+        row-gap: 10px;
+      }
+
+      .each-button {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        cursor: pointer;
+        
+      }
+
+      .each-button:hover {
+        background-color: rgb(240, 240, 240);
+        border-radius: 5px;
+        transition: all .5s;
+      }
+
+      i {
+        font-size: 23px;
+      }
+
+      .button-function {
+        font-size: 17px;
+      }
+
+      .my-profile {
+        width: 50%;
+        height: 50%;
+        border-radius: 30px;
+      }
+
+      .bottom-buttons {
+        display: grid;
+        grid-template-rows: 100px 50px 50px;
+        row-gap: 10px;
+      }
+      
+    </style>
+  </head>
+  
+    <body>
+      <div class="wrapper-left-sidebar">
+        <nav class="sidebar-left">
+        <div class="insta-logo-div">
+          <img class="insta-logo" src="media/Logo-Instagram-1.png">
+        </div>
+
+        <div class="navigation-buttons">
+          <div class="each-button">
+            <i class="fa-solid fa-house"></i>
+            <p class="button-function">Home page</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p class="button-function">Search</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-regular fa-compass"></i>
+            <p class="button-function">Explore</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-solid fa-film"></i>
+            <p class="button-function">Reels</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-regular fa-message"></i>
+            <p class="button-function">Messages</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-regular fa-heart"></i>
+            <p class="button-function">Notifications</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-regular fa-square-plus"></i>
+            <p class="button-function">Create</p>
+          </div>
+          <div class="each-button">
+            <img src="media/profile-avatar.jpeg" class="my-profile">
+            <p class="button-function">Your profile</p>
+          </div>
+        </div>
+
+        <div class="bottom-buttons">
+          <div class="blank"></div>
+          <div class="each-button">
+            <i class="fa-solid fa-at"></i>
+            <p class="button-function">Threads</p>
+          </div>
+          <div class="each-button">
+            <i class="fa-solid fa-bars"></i>
+            <p class="button-function">More</p>
+          </div>
+        </div>
+        
+        </nav>
+      </div>
+
+
+      <main class="middle-section">
+        <div class="insta-story">
+          <div class="one-story">
+            <img class="story-pic" src="media/story1.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story2.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story3.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story4.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story5.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story6.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story7.jpeg">
+          </div>
+          <div class="one-story">
+            <img class="story-pic" src="media/story8.jpeg">
+          </div>
+        </div>
+        <div class="all-post">
+          <!-- post 1 -->
+          <div class="insta-post"> 
+            <div class="upper-post">
+              <img class="author-pic" src="media/author-pic.jpeg">
+              <p class="author-name"> collegefessing </p>
+              <p class="post-time"> &#183; 2 hours ago </p>
+              <img class="menu-dots" src="media/menu-meatball.svg">
+            </div>
+            <div class="main-post">
+              <img class="post-pic" src="media/post-pic.jpeg" alt="A page in a book talking about many definitions of love.">
+              <div class="interaction-icons">
+                <div class="one-icon-button1">
+                  <img class="one-icon" src="media/heart-icon.svg">
+                </div>
+                <div class="one-icon-button2">
+                  <img class="one-icon" src="media/comment-icon.svg">
+                </div>
+                <div class="one-icon-button3">
+                  <img class="one-icon" src="media/save-icon.svg">
+                </div>
+              </div>
+            </div>
+            <div class="lower-post">
+              <div class="text-only">
+                <p class="who-likes">
+                  <strong>kaley_sutrin</strong> 
+                  and 
+                  <strong>other people</strong>
+                  liked
+                </p>
+                <p class="post-caption">
+                  <strong>collegefessing</strong> 
+                  <span class="random-account">@oneractive</span> has written the most beautiful paragraph ever. The definition of love varies among person and person, and in different times in a person's life...
+                </p>
+                <p class="translation" style="font-size: 12px; font-weight: bold;">See translation</p>
+                <p class="see-comments" style="color: gray;">Read 138 comments</p>
+              </div>
+              <div class="add-comment">
+                <div class="add-comment-div">
+                  <input class="input-for-comment" type="text" placeholder="Add comments...">
+                </div>
+                <div class="add-emoji-div">
+                  <img class="add-emoji" src="media/face-smile-regular.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- post 2 -->
+          <div class="insta-post">
+            <div class="upper-post">
+              <img class="author-pic" src="media/story2.jpeg">
+              <p class="author-name"> travel_lover </p>
+              <p class="post-time"> &#183; 2 hours ago </p>
+              <img class="menu-dots" src="media/menu-meatball.svg">
+            </div>
+            <div class="main-post">
+              <img class="post-pic" src="media/post-pic2.jpeg" alt="A woman walking on a bridge in the forest, seen from behind. ">
+              <div class="interaction-icons">
+                <div class="one-icon-button1">
+                  <img class="one-icon" src="media/heart-icon.svg">
+                </div>
+                <div class="one-icon-button2">
+                  <img class="one-icon" src="media/comment-icon.svg">
+                </div>
+                <div class="one-icon-button3">
+                  <img class="one-icon" src="media/save-icon.svg">
+                </div>
+              </div>
+            </div>
+            <div class="lower-post">
+              <div class="text-only">
+                <p class="who-likes">
+                  <strong>nora.kenneway</strong> 
+                  and 
+                  <strong>other people</strong>
+                  liked
+                </p>
+                <p class="post-caption">
+                  <strong>travel_lover</strong> 
+                  You only live once.
+                </p>
+                <p class="translation" style="font-size: 12px; font-weight: bold;">See translation</p>
+                <p class="see-comments" style="color: gray;">Read 10 comments</p>
+              </div>
+              <div class="add-comment">
+                <div class="add-comment-div">
+                  <input class="input-for-comment" type="text" placeholder="Add comments...">
+                </div>
+                <div class="add-emoji-div">
+                  <img class="add-emoji" src="media/face-smile-regular.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- post3 -->
+          <div class="insta-post">
+            <div class="upper-post">
+              <img class="author-pic" src="media/story3.jpeg">
+              <p class="author-name"> anna3451 </p>
+              <p class="post-time"> &#183; 2 hours ago </p>
+              <img class="menu-dots" src="media/menu-meatball.svg">
+            </div>
+            <div class="main-post">
+              <img class="post-pic" src="media/post-pic3.jpeg" alt="Minimal reading area in a house with wooden bookshelf and sitting couch underneath.">
+              <div class="interaction-icons">
+                <div class="one-icon-button1">
+                  <img class="one-icon" src="media/heart-icon.svg">
+                </div>
+                <div class="one-icon-button2">
+                  <img class="one-icon" src="media/comment-icon.svg">
+                </div>
+                <div class="one-icon-button3">
+                  <img class="one-icon" src="media/save-icon.svg">
+                </div>
+              </div>
+            </div>
+            <div class="lower-post">
+              <div class="text-only">
+                <p class="who-likes">
+                  <strong>ha_linh8901_</strong> 
+                  and 
+                  <strong>other people</strong>
+                  liked
+                </p>
+                <p class="post-caption">
+                  <strong>anna3451</strong> 
+                  My favorite homespace
+                </p>
+                <p class="translation" style="font-size: 12px; font-weight: bold;">See translation</p>
+                <p class="see-comments" style="color: gray;">Read 18 comments</p>
+              </div>
+              <div class="add-comment">
+                <div class="add-comment-div">
+                  <input class="input-for-comment" type="text" placeholder="Add comments...">
+                </div>
+                <div class="add-emoji-div">
+                  <img class="add-emoji" src="media/face-smile-regular.svg">
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+      </main>
+
+
+      <nav class="sidebar-right">
+        <div class="user-profile">
+          <div class="profile-pic-div">
+            <img class="profile-pic" src="media/profile-avatar.jpeg">
+          </div>
+          <div class="user-name-div">
+            <p style="font-weight: bold;">hihihihienanh_</p>
+            <p style="color: gray;">Hien Anh Hoang Phan</p>
+          </div>
+          <div class="switch-account-div">Switch</div>
+        </div>
+        <div class="friend-suggestion">
+          <div style="color: gray">Suggestions for you</div>
+          <div style="color: black; font-size: 12px">See all</div>
+        </div>
+        <div class="list-new-friend">
+          <div class="one-friend">
+            <div class="one-friend-ava-div"> 
+              <img class="one-friend-ava" src="media/right-ava1.jpeg">
+            </div>
+            <div class="one-friend-name-div"> 
+              <p style="font-weight: bold; font-size: 14px; line-height: 20px;">fatbong2024</p>
+              <p style="color: gray; font-size: 12px">samatha_3409 follows this person</p>
+            </div>
+            <div class="follow-button-div">
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+
+          <div class="one-friend">
+            <div class="one-friend-ava-div"> 
+              <img class="one-friend-ava" src="media/right-ava2.jpeg">
+            </div>
+            <div class="one-friend-name-div"> 
+              <p style="font-weight: bold; font-size: 14px; line-height: 20px;">conlubeo</p>
+              <p style="color: gray; font-size: 12px">hoag_hnam follows this person</p>
+            </div>
+            <div class="follow-button-div">
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+
+          <div class="one-friend">
+            <div class="one-friend-ava-div"> 
+              <img class="one-friend-ava" src="media/right-ava3.jpeg">
+            </div>
+            <div class="one-friend-name-div"> 
+              <p style="font-weight: bold; font-size: 14px; line-height: 20px;">_skyud</p>
+              <p style="color: gray; font-size: 12px">ud_events + 1 more person follows...</p>
+            </div>
+            <div class="follow-button-div">
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+
+          <div class="one-friend">
+            <div class="one-friend-ava-div"> 
+              <img class="one-friend-ava" src="media/right-ava4.jpeg">
+            </div>
+            <div class="one-friend-name-div"> 
+              <p style="font-weight: bold; font-size: 14px; line-height: 20px;">udinvolvementspecialists</p>
+              <p style="color: gray; font-size: 12px">ud_events follows this person</p>
+            </div>
+            <div class="follow-button-div">
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+
+          <div class="one-friend">
+            <div class="one-friend-ava-div"> 
+              <img class="one-friend-ava" src="media/right-ava5.jpeg">
+            </div>
+            <div class="one-friend-name-div"> 
+              <p style="font-weight: bold; font-size: 14px; line-height: 20px;">mimicdancecovers</p>
+              <p style="color: gray; font-size: 12px">kodacud follows this person</p>
+            </div>
+            <div class="follow-button-div">
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class="gray-info">
+          <p class="bunch-of-phrases">Introduction &#183; Assistance &#183; Press &#183; API &#183; Jobs &#183; Privacy &#183; Terms &#183; Location &#183; Languages &#183; Meta has confirmed</p>
+          <p class="last-line">@2023 INSTAGRAM FROM META</p>
+        </div>
+      </nav>
+    </body>
+  </head>
+</html>

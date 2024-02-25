@@ -1,0 +1,80 @@
+.sidebar-right {
+  margin: 40px 60px 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile {
+  display: grid;
+  grid-template-columns: 50px 200px 50px;
+  column-gap: 25px;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 55px;
+  border-radius: 29px;
+  border: 2px solid white;
+  outline: 1px solid lightgray;
+}
+
+.user-name-div {
+  padding: 12px 0px 12px 0px;
+}
+
+.user-name-div p {
+  font-size: 14px;
+}
+
+.switch-account-div {
+  font-family: Arial;
+  font-size: 13px;
+  color: rgb(71, 135, 255);
+  margin-left: -25px;
+}
+
+.friend-suggestion {
+  display: grid;
+  grid-template-columns: 150px 47px;
+  padding: 15px 0px 15px 0px;
+  column-gap: 126px;
+  font-family: arial;
+  font-size: 14px;
+}
+
+.one-friend {
+  display: grid;
+  height: 40px;
+  grid-template-columns: 40px 212px 50px;
+  column-gap: 10px;;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.one-friend-ava-div {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-friend-ava {
+  width: 35px;
+  border-radius: 20px;
+}
+
+.follow-button {
+  background-color: white;
+  border: none;
+  color: rgb(71, 135, 255);
+  font-size: 12px;
+}
+
+.bunch-of-phrases, .last-line {
+  color: rgb(194, 194, 194);
+  font-size: 12.5px;
+}
+
+.bunch-of-phrases {
+  margin: 21px 0px 21px 0px;
+}

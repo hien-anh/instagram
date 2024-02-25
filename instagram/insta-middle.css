@@ -1,0 +1,149 @@
+.middle-section {
+  margin-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: center;
+}
+
+.insta-story {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one-story {
+  width: 55px;
+  border-radius: 30px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-pic {
+  width: 55px;
+  border-radius: 30px;
+  border: 2px solid white;
+  outline: 2px solid rgb(250, 114, 137);
+}
+
+.all-post {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.insta-post, .insta-post2 {
+  display: grid; 
+  grid-template-columns: 470px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 18px;
+  margin-bottom: 15px;
+}
+
+.upper-post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 15px;
+  margin: 10px 10px 10px 2px;
+}
+
+.author-name, .post-time {
+  font-size: 14px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.author-name {
+  font-weight: 550;
+  color: black;
+}
+
+.post-time {
+  color: gray;
+}
+
+.menu-dots {
+  margin-left: 210px;
+}
+
+.main-post {
+  display: grid;
+  grid-template-columns: 470px;
+}
+
+.post-pic {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+}
+
+.interaction-icons {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px 10px 0px;
+  align-items: center;
+}
+
+.one-icon-button1, .one-icon-button2, .one-icon-button3 {
+  background-color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.one-icon-button2 {
+  margin-left: 17px;
+  margin-right: 380px;
+}
+
+.one-icon {
+  background-color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.text-only p {
+  font-size: 13.5px;
+}
+
+.random-account {
+  color: rgb(48, 48, 186);
+}
+
+.post-caption, .translation, .who-likes, .see-comments {
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+.input-for-comment {
+  border: none;
+  display: inline-block;
+  width: 100%;
+  padding: 2px 2px 2px 0px;
+}
+
+.input-for-comment::placeholder {
+  font-size: 14px;
+}
+
+.add-comment {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  align-items: center;
+  column-gap: 75px;
+}
+
+.add-emoji {
+  width: 13px;
+  opacity: 0.6;
+}
